@@ -1,5 +1,5 @@
 	<?php include("basics/content_grey.php"); ?>
-	<footer>
+	<footer class="container-fluid text-center">
 		<div id="footer_container">
 			<div id="footer">
 				<a href="home.php">Inicio</a> | 
