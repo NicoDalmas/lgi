@@ -8,7 +8,7 @@
 		{
 		?>
 			<input class="btn btn-primary" type="button" value="Iniciar Sesión" onClick="location.href='inicioSesion.php'" />
-			<input class="loginbutton" type="button" value="Registrarse" onClick="location.href='registrarse.php'" />'
+			<input class="btn btn-info" type="button" value="Registrarse" onClick="location.href='registrarse.php'" />
 		<?php
 		}
 		else

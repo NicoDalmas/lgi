@@ -9,10 +9,8 @@
 </head>
 
 <body>
-	<a href="" class="btn btn-success">Soy un boton de bootstrap</a>
 	<div id="main">
 		<div id="header">
-			<div id="header">
 				<div id="banner">
 					<?php include("basics/logo.php") ?>
 					<?php include("basics/sesion.php") ?>					
@@ -26,9 +24,7 @@
 			<div class="container-fluid text-center">    
 			  <div class="row content">
 				<div class="col-sm-2 sidenav">
-				  <p><a href="#">Link</a></p>
-				  <p><a href="#">Link</a></p>
-				  <p><a href="#">Link</a></p>
+				 
 				</div>
 				<div class="col-sm-8 text-left">
 				<!--?php include("basics/slider.php") ?-->

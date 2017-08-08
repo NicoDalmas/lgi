@@ -2,11 +2,7 @@
 
 <div id="menubar">
 	<ul id="menu">
-		<li class="current"><a href="home.php">Inicio</a></li>
-		<li><a href="clientes.php">Nuestros Clientes</a></li>
-		<li><a href="productos.php">Productos</a></li>
-		<li><a href="ofertas.php">Promociones</a></li>
-		<li><a href="contacto.php">Contacto</a></li>
+		
 		<?php
 			if(isset($_SESSION["username"]))
 			{
