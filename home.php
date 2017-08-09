@@ -70,12 +70,13 @@
       function initMap() {
       
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 13
+          center: {lat: -32.942186, lng: -60.653147},
+          zoom: 14
         });
         var infoWindow = new google.maps.InfoWindow({map: map});
 
         // Try HTML5 geolocation.
+        /*
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
             var pos = {
@@ -93,11 +94,14 @@
           // Browser doesn't support Geolocation
           handleLocationError(false, infoWindow, map.getCenter());
         }
+        */
           var urquiza = {lat: -32.942186, lng: -60.653147};
           var marker = new google.maps.Marker({
           position: urquiza,
           map: map
-        });
+        }); 
+
+        
       }
 
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
