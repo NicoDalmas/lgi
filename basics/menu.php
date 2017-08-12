@@ -38,7 +38,10 @@
         <li><a href="ofertas.php">Promociones</a></li>
 		<li><a href="contacto.php">Contacto</a></li>
       </ul>
-      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="inicioSesion.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		<!--<input class="btn btn-primary" type="button" value="Iniciar Sesión" onClick="location.href='inicioSesion.php'" /-->
+      </ul>
     </div>
   </div>
 </nav>

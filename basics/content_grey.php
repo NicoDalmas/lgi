@@ -1,4 +1,12 @@
-﻿		<div id="content_grey">
+﻿<div id="site_content">	
+					
+	<div class="container-fluid text-center">    
+	  <div class="row content">
+		<div class="col-sm-2 sidenav">
+		 
+		</div>
+		<div class="col-sm-8 text-centre">
+		<div id="content_grey">
 			<div class="content_grey_container_box">
 				<h4>Novedades</h4>
 				<p> Los exámenes digitales, ahora tienen evaluación por tiempo.</p>
@@ -13,3 +21,7 @@
 			</div>    
 			<br style="clear:both"/>
 		</div>
+		</div>
+	</div>
+</div>
+</div>

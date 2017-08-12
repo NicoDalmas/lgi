@@ -7,7 +7,7 @@
 		if(!isset($_SESSION["username"]))
 		{
 		?>
-			<input class="btn btn-primary" type="button" value="Iniciar Sesión" onClick="location.href='inicioSesion.php'" />
+			<input class="btn btn-primary" type="button" value="Iniciar Sesión" onClick="alert('hola');location.href='inicioSesion.php'" />
 			<input class="btn btn-info" type="button" value="Registrarse" onClick="location.href='registrarse.php'" />
 		<?php
 		}
