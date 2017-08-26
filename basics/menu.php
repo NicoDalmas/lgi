@@ -1,7 +1,7 @@
 <?php require_once("basics/session.php"); ?>
 
 <div id="menubar">
-	<ul id="menu">
+	
 		
 		<?php
 			if(isset($_SESSION["username"]))
@@ -24,7 +24,7 @@
 				}
 			}
 		?>
-	</ul>
+	
 </div>
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -38,10 +38,10 @@
         <li><a href="ofertas.php">Promociones</a></li>
 		<li><a href="contacto.php">Contacto</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="inicioSesion.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-		<!--<input class="btn btn-primary" type="button" value="Iniciar Sesión" onClick="location.href='inicioSesion.php'" /-->
-      </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	        <li><a href="inicioSesion.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	        <li><a href="registrarse.php"><span class="glyphicon glyphicon-plus-sign"></span> Registrarse</a></li>
+		</ul>
     </div>
   </div>
 </nav>

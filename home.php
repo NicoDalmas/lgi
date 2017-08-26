@@ -10,7 +10,7 @@
         margin: 0;
         padding: 0;
       }
-    </style>
+</style>
 
 
 <head>
@@ -21,9 +21,8 @@
 	<div id="main">
 		<div id="header">
 				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>
-					<?php include("basics/menu.php") ?>		
+        <?php include("basics/menu.php") ?>	
+				<?php include("basics/sesion.php") ?>
 				</div>	
 			</div>	
 		</div>	

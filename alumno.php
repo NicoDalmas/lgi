@@ -33,17 +33,11 @@
 </head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
-					<?php include("basics/menu_admin.php") ?>		
-				</div>	
-			</div>	
-		</div>	
-		
+	<?php include("basics/menu_admin.php") ?>
+	<?php include("basics/sesion.php") ?>
+
+
+
 		<div id="site_content">	
 			<br><center><H1> ¡Bienvenido alumno, desde este lugar podras acceder a tus evaluaciones, consultar tus notas y mas!   </H1> </center><br>
 		</div>
