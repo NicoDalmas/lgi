@@ -6,7 +6,7 @@
 </head>
 
 <body>
-	<div id="main">
+	<!--div id="main"-->
 		<div id="header">
 			<div id="banner">
 				<?php include("basics/logo.php") ?>	
@@ -14,29 +14,32 @@
 				<?php include("basics/menu.php") ?>		
 			</div>	
 		</div>
-		
-		<div id="site_content">		
-			<?php include("basics/slider.php") ?>	       
-			<div id="content">
-				<div class="content_item">
-					<h2>Nuestros Clientes</h2>
-					<div class="content_container">
-						<h3>Gobierno de Santa Fe (Transito)</h3>
-						<img src="images/gobiernosantafe.jpg" />
-					</div>
-					<div class="content_container">
-						<h3>Universidad de Palermo</h3>
-						<img src="images/UniversidaddePalermo.jpg" />
-					</div>
-					<div class="content_container">
-						<h3>Open English</h3>
-						<img src="images/openenglish.jpg" />
-					</div>
-					<div class="content_container">
-						<h3>Universidad de Chile</h3>
-						<img src="images/universidaddechile.jpg" />
-					</div>
+		<div class="container-fluid text-center">    
+		  <div class="row content">
+			<div class="col-sm-2 sidenav">
+			</div>
+			<div class="col-sm-8 text-center">
+				<div class="well">
+					<h3>Gobierno de Santa Fe (Transito)</h3>
+					<img src="images/gobiernosantafe.jpg" />
 				</div>
-			</div> 
+				<div class="well">
+					<h3>Universidad de Palermo</h3>
+					<img src="images/UniversidaddePalermo.jpg" />
+				</div>
+				<div class="well">
+					<h3>Open English</h3>
+					<img src="images/openenglish.jpg" />
+				</div>
+				<div class="well">
+					<h3>Universidad de Chile</h3>
+						<img src="images/universidaddechile.jpg" />
+				</div>
+			</div>
+			<div class="col-sm-2 sidenav">
+			  
+			</div>
+		  </div>
 		</div>
+	
 	<?php include("basics/footer.php"); ?>

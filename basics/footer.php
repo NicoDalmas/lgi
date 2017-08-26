@@ -1,7 +1,6 @@
-	<?php include("basics/content_grey.php"); ?>
+
 	<footer class="container-fluid text-center">
-		<div id="footer_container">
-			<div id="footer">
+		
 				<a href="home.php">Inicio</a> | 
 				<a href="clientes.php">Nuestros Clientes</a> | 
 				<a href="ofertas.php">Ofertas</a> | 
@@ -14,8 +13,7 @@
 				<a href="https://www.facebook.com/pages/Examinar/492311657558346" title="Encuéntranos en Facebook"><img src="images/facebook.png"></a>
 				<a href="https://twitter.com/@ExaminAR"><img src="images/twitter.png" title="Síguenos en Twitter"></a>
 			</div>
-			</div>
-		</div>
+			
 	</footer>
 	
 </body>
