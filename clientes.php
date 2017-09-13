@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
@@ -6,10 +7,11 @@
 </head>
 
 <body>
+
 	<!--div id="main"-->
 		<div id="header">
 			<div id="banner">
-				<?php include("basics/logo.php") ?>	
+				
 				<?php include("basics/sesion.php") ?>
 				<?php include("basics/menu.php") ?>		
 			</div>	
@@ -41,5 +43,6 @@
 			</div>
 		  </div>
 		</div>
-	
+	<iframe width="100%" height="420" frameborder="0" src="https://nicolasdalmas.carto.com/builder/2d83e31b-9534-49fb-81ae-98ae686bfe14/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+    
 	<?php include("basics/footer.php"); ?>

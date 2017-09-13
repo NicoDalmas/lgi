@@ -102,12 +102,12 @@
 				</div>	
 			</div>	
 		</div>	
-		<div id="site_content">		
-			<div id="content">
-				<div class="content_item">
+			<div class="container" align="center">
+				
+				<div class="jumbotron">	
 					<form name="frmContacto" method="post">	
 						<div class="form_settings">
-							<h1>Iniciar Sesión</h1>
+							
 							<table class="tbliniciosesion">
 								<tr>
 									<td>
@@ -135,7 +135,7 @@
 								</tr>
 								<tr>
 									<td>
-										<input class="submit" type="submit" value="Ingresar" />
+										<input class="btn btn-primary" type="submit" value="Ingresar" />
 									</td>
 								</tr>
 							</table>
