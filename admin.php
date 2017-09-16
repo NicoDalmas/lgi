@@ -21,23 +21,13 @@
 ?>
 
 
-<head>
-	<?php include("basics/header.php") ?>	
-</head>
+<?php include("basics/header.php") ?>	
+
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/menu_admin.php") ?>	
-					<?php include("basics/sesion.php") ?>					
-						
-				</div>	
-			</div>	
-		</div>	
+	
+	<?php include("basics/menu_admin.php") ?>	
 		
-		<div id="site_content">	
-			<br><center><H1> Bienvenido al modulo de control del sitio.</H1> </center><br>
-		</div>
+	<br><center><H1> Bienvenido al módulo de control del sitio.</H1></center><br>
+		
 	<?php include("basics/footer.php"); ?>
