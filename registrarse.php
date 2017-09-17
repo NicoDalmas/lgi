@@ -125,7 +125,7 @@
 		<div id="header">
 			<div id="header">
 				<div id="banner">
-					<?php include("basics/logo.php") ?>	
+					
 					<?php include("basics/sesion.php") ?>
 					<?php include("basics/menu.php") ?>						
 				</div>	
@@ -135,16 +135,22 @@
 		<div id="site_content">		
 			<div id="content">
 				<div class="content_item">
+					<div class="container" align="center">
+						<div class="jumbotron">	
 					<form name="frmRegistro" method="post" onsubmit="return validar()" action="basics/registrar_usuario.php">	
 						<div class="form_settings">
-							<h1>Registrarse</h1>
-							<table class="tblregistro">
+							
+							<table class="table table-striped">
+								<label for="exampleInputFile">Registrarse</label>
 								<tr>
 									<td>
 										<p><span>Usuario *</span><br/>
 										<input type="text" name="usuario" /></p>
 									</td>
-									<td>
+								</tr>
+								<tr>
+								<td>
+																	
 										<p><span>Razón Social ( Completar en el caso de un cliente )</span><br/>
 										<input type="text" name="razon" /></p>
 									</td>
@@ -154,6 +160,8 @@
 										<p><span>Contraseña *</span><br/>
 										<input type="password" name="clave1" /></p>
 									</td>
+								</tr>
+								<tr>
 									<td>
 										<p><span>Nombre *</span><br/>
 										<input type="text" name="nombre" /></p>
@@ -164,15 +172,14 @@
 										<p><span>Repita Contraseña *</span><br/>
 										<input type="password" name="clave2" /></p>
 									</td>
+								<tr>	
 									<td>
 										<p><span>Apellido *</span><br/>
 										<input type="text" name="apellido" /></p>
 									</td>
 								</tr>
 								<tr>
-									<td>
-										<br/><br/>
-									</td>
+									
 									<td>
 										<p><span>DNI *</span><br/>
 										<input type="text" name="dni" /></p>
@@ -180,19 +187,22 @@
 								</tr>
 								<tr>
 									<td>
-										<br/><br/>
-									</td>
-									<td>
 										<p><span>Alumno o Cliente*</span><br/>	</p>
-											Alumno<input id="radio" type="radio" name="tipo" value="1"  checked="checked"/>
-											Cliente<input id="radio" type="radio" name="tipo" value="2"  />
+										<div class="radio">
+											  <label>
+											    <input type="radio" name="tipo" id="radio" value="1" checked="checked">
+											    Alumno
+											  </label>
+											  <label>
+											    <input type="radio" name="tipo" id="radio" value="2">
+											    Cliente
+											  </label>
+										</div>	
+											
 									
 									</td>
 								</tr>
 								<tr>
-									<td>
-										<br/><br/>
-									</td>
 									<td>
 										<p><span>Fecha de Nacimiento *</span><br/>
 										<input type="text" id="datepicker" /></p>
@@ -200,27 +210,27 @@
 								</tr>
 								<tr>
 									<td>
-										<br/><br/>
-									</td>
-									<td>
 										<p><span>Correo Electrónico *</span><br/>
 										<input type="text" name="correo" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<br/><br/>
-									</td>
-									<td>
 										<p><span>Sexo *</span><br/>	</p>
-											Hombre<input id="radio" type="radio" name="sexo" value="h" checked="checked" />
-											Mujer<input id="radio" type="radio" name="sexo" value="m" />
+										<div class="radio">
+											  <label>
+											    <input type="radio" name="sexo" id="radio" value="h" checked="checked">
+											    Hombre
+											  </label>
+											  <label>
+											    <input type="radio" name="sexo" id="radio" value="m">
+											    Mujer
+											  </label>
+										</div>	  
+											
 									</td>
 								</tr>
 								<tr>
-									<td>
-										<br/><br/>
-									</td>
 									<td>
 										<p><span>Pregunta Secreta *</span><br/>
 										<select>
@@ -233,9 +243,6 @@
 								</tr>
 								<tr>
 									<td>
-										<br/><br/>
-									</td>
-									<td>
 										<p><span>Respuesta a Pregunta Secreta *</span><br/>
 										<input type="text" name="respuesta" /></p><br/>
 									</td>
@@ -245,12 +252,12 @@
 							Ningún dato que usted brinde a este sitio será usado para otro fin
 							que no sea uso interno de nuestro sitio.</p><br/>
 							<center>
-								<input class="submit" type="reset" value="Limpiar" />
-								<input class="submit" type="submit" name="contact_submitted" value="Enviar" />
+								<input class="btn btn-alert" type="reset" value="Limpiar" />
+								<input class="btn btn-primary" type="submit" name="contact_submitted" value="Enviar" />
 							</center>
 						</div>
 					</form>
-				</div>
+				</div></p></td></tr></table></div></form></div>
 			</div>
 		</div>
 	</div>
