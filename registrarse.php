@@ -7,9 +7,6 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
 <head>
 	<?php include("basics/header.php") ?>
 	<link rel="stylesheet" href="css/jquery-ui.css">
@@ -261,4 +258,5 @@
 			</div>
 		</div>
 	</div>
+</tr></table></div></form></div></div></div></div></div></div></body>
 	<?php include("basics/footer.php"); ?>

@@ -1,6 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
 <head>
   <?php include("basics/header.php") ?>	
   <?php
@@ -63,25 +60,19 @@
 </head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="banner">
-				<?php include("basics/logo.php") ?>	
-				<?php include("basics/sesion.php") ?>
-				<?php include("basics/menu.php") ?>		
-			</div>	
-		</div>	
-		
-		<div id="site_content">	
-			<?php include("basics/slider.php") ?>
-			<div id="content">
-				<div class="content_item">
-					<form name="frmContacto" onsubmit="return arroba()" action="mailto:examinar@outlook.com" method="post" enctype="text/plain">	
-						<div class="form_settings">
-							<?php include("basics/comunicar.php"); ?>
-							<h2>Contacto</h2>
+	
+	<?php include("basics/sesion.php") ?>
+	<?php include("basics/menu.php") ?>		
+		<div id="content">
+		<div class="content_item">
+		<div class="container" align="center">
+		<div class="jumbotron">	
+			<form name="frmContacto" onsubmit="return arroba()" action="mailto:examinar@outlook.com" method="post" enctype="text/plain">	
+			<div class="form_settings">
+			<?php include("basics/comunicar.php"); ?>
+				<h2>Contactosss</h2>
 							<p>Mediante este formulario podés comunicarte con nosotros. Se te responderá a la brevedad.</p>
-							<table class="tblcontacto">
+							<table class="table table-striped">
 								<tr>
 									<td>
 										<p><span>Nombre</span><br/>
@@ -127,4 +118,5 @@
 				</div>
 			</div> 
 		</div>
+	</div></body>
 	<?php include("basics/footer.php"); ?>
