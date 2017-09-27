@@ -76,19 +76,19 @@
 								<tr>
 									<td>
 										<p><span>Nombre</span><br/>
-										<input type="text" name="contacto_nombre" value="" /></p>
+										<input type="text" name="contacto_nombre" value="" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Email</span><br/>
-										<input type="text" name="contacto_email" value="" /></p>
+										<input type="text" name="contacto_email" value="" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Tipo de Consulta</span><br/>
-										<select name="contacto_tipodeconsulta">
+										<select name="contacto_tipodeconsulta" class="form-control">
 											<option selected="selected" value="General">General</option>
 											<option value="Promociones">Promociones</option>
 											<option value="Administracion">Administracion</option>
@@ -99,15 +99,15 @@
 								<tr>
 									<td>
 										<p><span>Mensaje</span><br/>
-										<textarea class="contact textarea" rows="8" cols="50" name="contacto_mensaje"></textarea></p>
+										<textarea class="form-control" rows="8" cols="50" name="contacto_mensaje"></textarea></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<div class="botones">
 											<center>
-												<input class="submit" type="reset" value="Limpiar" />
-												<input class="submit" type="submit" name="contact_submitted" value="Enviar" />
+												<input class="btn btn-alert" type="reset" value="Limpiar" />
+												<input class="btn btn-primary" type="submit" name="contact_submitted" value="Enviar" />
 											</center>
 										</div>
 									</td>

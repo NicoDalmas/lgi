@@ -129,9 +129,7 @@
 			</div>	
 		</div>	
 		
-		<div id="site_content">		
-			<div id="content">
-				<div class="content_item">
+		
 					<div class="container" align="center">
 						<div class="jumbotron">	
 					<form name="frmRegistro" method="post" onsubmit="return validar()" action="basics/registrar_usuario.php">	
@@ -142,56 +140,56 @@
 								<tr>
 									<td>
 										<p><span>Usuario *</span><br/>
-										<input type="text" name="usuario" /></p>
+										<input type="text" name="usuario" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 								<td>
 																	
 										<p><span>Razón Social ( Completar en el caso de un cliente )</span><br/>
-										<input type="text" name="razon" /></p>
+										<input type="text" name="razon" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Contraseña *</span><br/>
-										<input type="password" name="clave1" /></p>
+										<input type="password" name="clave1" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Nombre *</span><br/>
-										<input type="text" name="nombre" /></p>
+										<input type="text" name="nombre" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Repita Contraseña *</span><br/>
-										<input type="password" name="clave2" /></p>
+										<input type="password" name="clave2" class="form-control" /></p>
 									</td>
 								<tr>	
 									<td>
 										<p><span>Apellido *</span><br/>
-										<input type="text" name="apellido" /></p>
+										<input type="text" name="apellido" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									
 									<td>
 										<p><span>DNI *</span><br/>
-										<input type="text" name="dni" /></p>
+										<input type="text" name="dni" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Alumno o Cliente*</span><br/>	</p>
-										<div class="radio">
-											  <label>
-											    <input type="radio" name="tipo" id="radio" value="1" checked="checked">
+										
+											  <label class="form-check-label">
+											    <input class="form-check-input" type="radio" name="tipo" id="radio" value="1" checked="checked">
 											    Alumno
 											  </label>
-											  <label>
-											    <input type="radio" name="tipo" id="radio" value="2">
+											  <label class="form-check-label">
+											    <input class="form-check-input" type="radio" name="tipo" id="radio" value="2">
 											    Cliente
 											  </label>
 										</div>	
@@ -202,35 +200,37 @@
 								<tr>
 									<td>
 										<p><span>Fecha de Nacimiento *</span><br/>
-										<input type="text" id="datepicker" /></p>
+										<input type="text" id="datepicker" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Correo Electrónico *</span><br/>
-										<input type="text" name="correo" /></p>
+										<input type="text" name="correo" class="form-control" /></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><span>Sexo *</span><br/>	</p>
-										<div class="radio">
-											  <label>
-											    <input type="radio" name="sexo" id="radio" value="h" checked="checked">
+										<p>Sexo *</p>
+										
+											 	<label class="form-check-label">
+											    <input type="radio" name="sexo" value="h" checked="checked" class="form-check-input">
 											    Hombre
-											  </label>
-											  <label>
-											    <input type="radio" name="sexo" id="radio" value="m">
+											</label>
+											 
+											 	<label class="form-check-label">
+											    <input type="radio" name="sexo" value="m"  class="form-check-input">
 											    Mujer
-											  </label>
-										</div>	  
+											</label>
+											  
+										
 											
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p><span>Pregunta Secreta *</span><br/>
-										<select>
+										<select class="form-control">
 											<option selected="selected" value="1">¿Cuál fue tu primera mascota?</option>
 											<option value="2">¿Cuál es tu canción preferida?</option>
 											<option value="3">¿Cuál es tu comida favorita?</option>
@@ -241,7 +241,7 @@
 								<tr>
 									<td>
 										<p><span>Respuesta a Pregunta Secreta *</span><br/>
-										<input type="text" name="respuesta" /></p><br/>
+										<input type="text" name="respuesta" class="form-control" /></p><br/>
 									</td>
 								</tr>
 							</table>
