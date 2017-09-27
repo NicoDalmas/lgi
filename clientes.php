@@ -1,17 +1,3 @@
-<style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 50%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-</style>
-
 <head>
 	<?php include("basics/header.php") ?>	
 </head>
@@ -24,7 +10,7 @@
 				<?php include("basics/menu.php") ?>		
 			</div>	
 		</div>
-		
+
 		<div class="container-fluid text-center">    
 		  <div class="row content">
 			<div class="col-sm-2 sidenav">
@@ -53,5 +39,5 @@
 			</div>
 		  </div>
 		</div>
-	
+	<iframe width="100%" height="520" frameborder="0" src="https://nicolasdalmas.carto.com/builder/2d83e31b-9534-49fb-81ae-98ae686bfe14/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 	<?php include("basics/footer.php"); ?>
