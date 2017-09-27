@@ -24,6 +24,7 @@
 				<?php include("basics/menu.php") ?>		
 			</div>	
 		</div>
+		
 		<div class="container-fluid text-center">    
 		  <div class="row content">
 			<div class="col-sm-2 sidenav">
@@ -46,6 +47,7 @@
 						<img src="images/universidaddechile.jpg" />
 				</div>
 			</div>
+
 			<div class="col-sm-2 sidenav">
 			  
 			</div>
