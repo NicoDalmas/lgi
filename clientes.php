@@ -1,15 +1,13 @@
 <head>
-	<?php include("basics/header.php") ?>	
+	<?php include("basics/header.php") ?>
+		
 </head>
 
 <body>
-	<!--div id="main"-->
-		<div id="header">
-			<div id="banner">
+	
 				<?php include("basics/sesion.php") ?>
 				<?php include("basics/menu.php") ?>		
-			</div>	
-		</div>
+
 
 		<div class="container-fluid text-center">    
 		  <div class="row content">

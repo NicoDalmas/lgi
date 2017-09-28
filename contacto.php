@@ -1,5 +1,6 @@
 <head>
   <?php include("basics/header.php") ?>	
+  <link rel="stylesheet" href="css/3d.css">
   <?php
     $digit1 = mt_rand(1,20);
     $digit2 = mt_rand(1,20);
@@ -63,14 +64,106 @@
 	
 	<?php include("basics/sesion.php") ?>
 	<?php include("basics/menu.php") ?>		
+
+
+
+
+
+
+				<div class="container">
+<div class="row">
+
+<div class="col-md-3 col-sm-6 col-xs-12 nb-service-block">
+<div class="nb-service-block-inner">
+<div class="nb-service-front">
+<div class="front-content">
+	<i class="fa fa-phone-square" aria-hidden="true"></i>
+    <h3>Teléfono</h3>
+</div>
+</div>
+
+<div class="nb-service-back">
+<div class="back-content">
+    <h3>Teléfono</h3>
+    <p>153796796</p>
+    <p>4614259</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-sm-6 col-xs-12 nb-service-block">
+<div class="nb-service-block-inner">
+<div class="nb-service-front">
+<div class="front-content">
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <h3>Dirección</h3>
+</div>
+</div>
+
+<div class="nb-service-back">
+<div class="back-content">
+    <h3>Dirección</h3>
+    <p>Bv. Oroño 2400</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-md-3 col-sm-6 col-xs-12 nb-service-block">
+<div class="nb-service-block-inner">
+<div class="nb-service-front">
+<div class="front-content">
+   <i class="fa fa-envelope-o" aria-hidden="true"></i>
+    <h3>Correo Electrónico</h3>
+</div>
+</div>
+
+<div class="nb-service-back">
+<div class="back-content">
+    <h3>Email</h3>
+    <p>info@examinar.com</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="col-md-3 col-sm-6 col-xs-12 nb-service-block">
+<div class="nb-service-block-inner">
+<div class="nb-service-front">
+<div class="front-content">
+    <i class="fa fa-home" aria-hidden="true"></i>
+    <h3>Formulario</h3>
+</div>
+</div>
+
+<div class="nb-service-back">
+<div class="back-content">
+    <h3>Formulario</h3>
+    <p>Podes completar el formulario a continuación para escribirnos directamente!</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
 		<div id="content">
 		<div class="content_item">
 		<div class="container" align="center">
 		<div class="jumbotron">	
-			<form name="frmContacto" onsubmit="return arroba()" action="mailto:examinar@outlook.com" method="post" enctype="text/plain">	
+			<form name="frmContacto" onsubmit="return arroba()" action="mailto:ndalmas9@gmail.com" method="post" enctype="text/plain">	
 			<div class="form_settings">
-			<?php include("basics/comunicar.php"); ?>
-				<h2>Contactosss</h2>
+			
+				<h2>Formulario</h2>
 							<p>Mediante este formulario podés comunicarte con nosotros. Se te responderá a la brevedad.</p>
 							<table class="table table-striped">
 								<tr>
