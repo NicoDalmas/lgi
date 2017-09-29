@@ -1,4 +1,4 @@
-	<footer class="container-fluid text-center">
+<footer class="container-fluid text-center">
 		
 				<a href="home.php">Inicio</a> | 
 				<a href="clientes.php">Nuestros Clientes</a> | 

@@ -1,12 +1,8 @@
-<head>
-	<?php include("basics/header.php") ?>
-		
-</head>
+<?php include("basics/header.php") ?>
 
 <body>
 	
-				<?php include("basics/sesion.php") ?>
-				<?php include("basics/menu.php") ?>		
+	<?php include("basics/menu.php") ?>		
 
 
 		<div class="container-fluid text-center">    

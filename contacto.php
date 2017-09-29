@@ -1,76 +1,11 @@
-<head>
-  <?php include("basics/header.php") ?>	
-  <link rel="stylesheet" href="css/3d.css">
-  <?php
-    $digit1 = mt_rand(1,20);
-    $digit2 = mt_rand(1,20);
-    if( mt_rand(0,1) === 1 )
-	{
-        $math = "$digit1 + $digit2";
-        $_SESSION['answer'] = $digit1 + $digit2;
-    } 
-	else 
-	{
-        $math = "$digit1 - $digit2";
-        $_SESSION['answer'] = $digit1 - $digit2;
-    }
-    ?>
-  <script>
-  function arroba()
-	{
-		cuenta=0
-		cuenta2=0
-		mail=document.frmContacto.contacto_email.value
-		nombre=document.frmContacto.contacto_nombre.value
-		textoarea=document.frmContacto.contacto_mensaje.value
-		for(i=0;i<mail.length;i++)
-		{ 
-			if (mail.charAt(i)==".")
-			{
-				cuenta=cuenta+1
-			}
-		}
-		for(i=0;i<mail.length;i++)
-		{ 
-			if (mail.charAt(i)=="@")
-			{
-				cuenta2=cuenta2+1
-			}
-		}
-		if(cuenta<1 || cuenta2!=1)
-		{
-			alert("Mail invalido")
-			document.frmContacto.contacto_email.focus()
-			return false
-		}
-		if (nombre.length<=3)
-		{
-			alert("Nombre demasiado corto.")
-			document.frmContacto.contacto_nombre.focus()
-			return false
-		}
-		if (textoarea.length<=10)
-		{
-			alert("Texto demasiado corto.")
-			document.frmContacto.contacto_mensaje.focus()
-			return false
-		}
-
-	}
-  </script>
-</head>
-
+<?php include("basics/header.php") ?>	
+<link rel="stylesheet" href="css/3d.css">
+ 
 <body>
-	
-	<?php include("basics/sesion.php") ?>
-	<?php include("basics/menu.php") ?>		
 
+<?php include("basics/menu.php") ?>
 
-
-
-
-
-				<div class="container">
+<div class="container">
 <div class="row">
 
 <div class="col-md-3 col-sm-6 col-xs-12 nb-service-block">

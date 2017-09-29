@@ -1,6 +1,14 @@
-﻿<?php require_once("basics/session.php"); ?>
-<?php require_once("basics/connection_db.php"); ?>
-<?php require_once("basics/functions.php"); ?>
+﻿<?php include("basics/header.php") ?>
+
+
+<body>
+	
+	<?php include("basics/menu.php") ?>	
+
+
+	<?php require_once("basics/session.php"); ?>
+	<?php require_once("basics/connection_db.php"); ?>
+	<?php require_once("basics/functions.php"); ?>
 
 <?php
 	if(isset($_SESSION["username"]))
@@ -87,21 +95,11 @@
 			$mensaje = "Uno o ambos campos están vacíos.";
 		}
 	}
-?>
-<head>
-	<?php include("basics/header.php") ?>	
-</head>
+?>					
+			
+			
 
-<body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/menu.php") ?>
-					<?php include("basics/sesion.php") ?>						
-				</div>	
-			</div>	
-		</div>	
+
 			<div class="container" align="center">
 				
 				<div class="jumbotron">	
@@ -143,6 +141,5 @@
 					</form>
 				</div>
 			</div>
-		</div>
-	</div>
+		
 	<?php include("basics/footer.php"); ?>

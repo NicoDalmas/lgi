@@ -20,8 +20,6 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
 	<?php include("basics/header.php") ?>
@@ -63,19 +61,10 @@
 	</script>	
 </head>
 
-<body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
+<body>		
 					<?php include("basics/menu_admin.php") ?>
 					<?php include("basics/functions.php") ?>					
-				</div>	
-			</div>	
-		</div>	
-		
+				
 		<div id="site_content">	
 			<div>
 				</br>
@@ -98,13 +87,14 @@
 					{
 				?>
 				<center>
-					<table class="tblmaterias" id="tblmaterias" style="visibility:visible;">
+					<div class="table-responsive">
+					<table class="table table-striped" id="tblmaterias" style="visibility:visible;">
 						<tr>
-							<td>Id</td>
-							<td>Nombre</td>
-							<td>Descripción</td>
-							<td></td>
-							<td></td>
+							<th>Id</th>
+							<th>Nombre</th>
+							<th>Descripción</th>
+							<th>Editar</th>
+							<th>Eliminar</th>
 						</tr>
 						<?php
 							$materias=l_materias();
@@ -114,8 +104,8 @@
 								echo      "<td>" . $materia['idMateria'] . "</td>" .
 										  "<td>" . $materia['materia'] . "</td>" .
 										  "<td>" . $materia['descripcion'] . "</td>" .
-										  "<td><a href='?editarMateria=" . $materia['idMateria'] . "'>Editar</a></td>" . 
-										  "<td><a href='?eliminarMateria=" . $materia['idMateria'] . "'>Eliminar</a></td>";
+										  "<td><a href='?editarMateria=" . $materia['idMateria'] . "'> <span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span></a></td>" . 
+										  "<td><a href='?eliminarMateria=" . $materia['idMateria'] . "'> <span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span></a></td>";
 								echo "</tr>";
 							}
 							if (isset($_REQUEST['eliminarMateria'])) 
@@ -125,14 +115,15 @@
 						?>
 						<tr>
 							<form name="frmMateria" method="post" onsubmit="return validar()" action="admin_materias.php">
-								<td></td>
-								<td><input type="text" name="materia"></td>
-								<td><input type="textarea" name="descripcion"></td>
-								<td><input type="submit" name="agregar" value="Agregar"></td>
+								<td><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></td>
+								<td><input type="text" name="materia" class="form-control"></td>
+								<td><input type="textarea" name="descripcion" class="form-control"></td>
+								<td><input type="submit" class="btn btn-success" name="agregar" value="Agregar Nueva Materia"></td>
 								<td></td>
 							</form>
 						</tr>
 					</table>
+				</div>
 				</center>
 				<?php
 					}

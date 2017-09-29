@@ -1,4 +1,11 @@
-<?php require_once("basics/session.php"); ?>
+
+<?php include("basics/header.php") ?>
+<?php include("basics/session.php") ?>
+<body>
+<?php include("basics/menu_admin.php") ?>	
+
+
+
 <?php
 	if(isset($_SESSION["username"]))
 	{
@@ -21,13 +28,8 @@
 ?>
 
 
-<?php include("basics/header.php") ?>	
-
-
-<body>
-	
-	<?php include("basics/menu_admin.php") ?>	
+<br><center><H1> Bienvenido al módulo de control del sitio.</H1></center><br>
 		
-	<br><center><H1> Bienvenido al módulo de control del sitio.</H1></center><br>
-		
-	<?php include("basics/footer.php"); ?>
+</body>		
+
+<?php include("basics/footer.php"); ?>
