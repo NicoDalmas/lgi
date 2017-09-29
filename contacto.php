@@ -71,7 +71,7 @@
 <div class="nb-service-block-inner">
 <div class="nb-service-front">
 <div class="front-content">
-    <i class="fa fa-home" aria-hidden="true"></i>
+   <i class="fa fa-list-alt" aria-hidden="true"></i>
     <h3>Formulario</h3>
 </div>
 </div>

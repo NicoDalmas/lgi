@@ -45,10 +45,8 @@
 
 <body>
 	
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
-					<?php include("basics/menu_admin.php") ?>		
-					<?php include("basics/functions.php") ?>	
+				<?php include("basics/menu_admin.php") ?>		
+				<?php include("basics/functions.php") ?>	
 				
 
 				<div class="form-group">
@@ -59,12 +57,12 @@
 									<td>
 										
 										<div class="form-group">
-  <label for="sel1">Tipo de Examen: </label>
-  <select class="form-control" id="sel1">
-    <option>Online</option>
-    <option>Offline</option>
-  </select>
-</div>
+									  <label >Tipo de Examen: </label>
+									  <select class="form-control" >
+									    <option>Online</option>
+									    <option>Offline</option>
+									  </select>
+									</div>
 									</td>
 									<td rowspan="4">
 										<p><span><b>Comentarios sobre el contenido</b>></span><br/>
