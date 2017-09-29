@@ -100,6 +100,7 @@
 			
 				<h2>Formulario</h2>
 							<p>Mediante este formulario podés comunicarte con nosotros. Se te responderá a la brevedad.</p>
+							<div class="table-responsive">
 							<table class="table table-striped">
 								<tr>
 									<td>
@@ -141,6 +142,7 @@
 									</td>
 								</tr>
 							</table>
+						</div>
 						</div>
 					</form>
 				</div>

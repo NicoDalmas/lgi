@@ -20,10 +20,9 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<head>
+
+
 	<?php include("basics/header.php") ?>
 	<script>
 	function validar()
@@ -37,37 +36,28 @@
 		}
 	}
 	</script>
-</head>
+
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
+
 					<?php include("basics/menu_admin.php") ?>
 					<?php include("basics/functions.php") ?>					
-				</div>	
-			</div>	
-		</div>	
-		<div id="site_content">	
-			<div>
-				</br>
+				
 				<h2>Crear Exámenes</h2>
 				<?php
 				if(!isset($_REQUEST['crearExamen'])) 
 				{ ?>
 					<center>
-						<table class="tblEvaluaciones" id="tblCrearEvaluaciones">
+						<div class="table-responsive">
+						<table class="table table-bordered" id="tblCrearEvaluaciones">
 							<tr>
-								<td>Id Pedido</td>
-								<td>Materia</td>
-								<td>Tipo</td>
-								<td>Tiempo</td>
-								<td>Comentarios</td>
-								<td>Cant Encuestados</td>
-								<td></td>
+								<th>Id Pedido</th>
+								<th>Materia</th>
+								<th>Tipo</th>
+								<th>Tiempo</th>
+								<th>Comentarios</th>
+								<th>Cant Encuestados</th>
+								<th>Crear</th>
 							</tr>
 							<?php
 								$pedidos=l_solicitudesPendientes();
@@ -80,11 +70,13 @@
 											  "<td>" . $pedido['tiempo'] . "</td>" .
 											  "<td>" . $pedido['comentarios'] . "</td>" .
 											  "<td>" . $pedido['cantidadEncuestados'] . "</td>" .
-											  "<td><a href='?crearExamen=" . $pedido['id'] . "'>Crear</a></td>";
+											  "<td><a href='?crearExamen=" . $pedido['id'] . "'> <button type='button' class='btn btn-success'>
+	    <span class='glyphicon glyphicon-ok'></span></button></a></td>";
 									echo "</tr>";
 								}
 							?>
 						</table>
+					</div>
 						</br>
 					</center>
 				<?php
@@ -110,6 +102,7 @@
 					if(!isset($datosExamen['idExamen']))
 					{ ?>
 						<form name="frmCrearExamen" method="post" onsubmit="return validar()" action="admin_evaluaciones.php">
+							<div class="form-group">
 							<p>
 								<b>Nombre Examen: </b>
 								<input type="text" name="nombre" maxlength="25">
@@ -127,6 +120,7 @@
 							</p>
 							<input type="submit" name="crear" value="Crear">
 						</form>
+					</div>
 						</br>
 					 <?php 
 					}

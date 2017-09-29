@@ -20,10 +20,9 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<head>
+
+
 	<?php include("basics/header.php") ?>
 	<script languaje="javascript">
 		function validar()
@@ -80,20 +79,13 @@
 			tabla.style.visibility = "hidden";
 		}
 	</script>
-</head>
+
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
-					<?php include("basics/menu_admin.php") ?>
-					<?php include("basics/functions.php") ?>					
-				</div>	
-			</div>	
-		</div>	
+	
+		<?php include("basics/menu_admin.php") ?>
+		<?php include("basics/functions.php") ?>					
+				
 		
 		<div id="site_content">	
 			<div>
@@ -118,14 +110,14 @@
 					{
 				?>
 				<center>
-					<table class="tblPromos" id="tblPromos" style="visibility:visible;">
+					<table class="table table-striped" id="tblPromos" style="visibility:visible;">
 						<tr>
-							<td>Id</td>
-							<td>Título</td>
-							<td>Descripción</td>
-							<td>Precio</td>
-							<td></td>
-							<td></td>
+							<th>Id</th>
+							<th>Título</th>
+							<th>Descripción</th>
+							<th>Precio</th>
+							<th>Editar</th>
+							<th>Eliminar</th>
 						</tr>
 						<?php
 							$promociones=l_promociones();
@@ -136,8 +128,10 @@
 										  "<td>" . $promo['titulo'] . "</td>" .
 										  "<td>" . $promo['descripcion'] . "</td>" .
 										  "<td>" . $promo['precio'] . "</td>" .
-										  "<td><a href='?editarPromo=" . $promo['id'] . "'>Editar</a></td>" . 
-										  "<td><a href='?eliminarPromo=" . $promo['id'] . "'>Eliminar</a></td>";
+										  "<td><a href='?editarPromo=" . $promo['id'] . "'> <button type='button' class='btn btn-warning'>
+	    <span class='glyphicon glyphicon-edit'></span>  Editar  </button></a></td>" . 
+										  "<td><a href='?eliminarPromo=" . $promo['id'] . "'> <button type='button' class='btn btn-danger'>
+	    <span class='glyphicon glyphicon-trash'></span>  Eliminar  </button> </a></td>";
 								echo "</tr>";
 							}
 							if (isset($_REQUEST['eliminarPromo'])) 
@@ -148,10 +142,11 @@
 						<tr>
 							<form name="frmPromos" method="post" onsubmit="return validar()" action="admin_promos.php">
 								<td></td>
-								<td><textarea type="text" style="height:80px; resize:none; font-family:Verdana; font-size:12px;" maxlength="80" name="nuevoTitulo"></textarea></td>
-								<td><textarea type="text" style="height:80px; width:400px; resize:none; font-family:Verdana; font-size:12px;" maxlength="500" name="nuevoDescripcion"></textarea></td>
-								<td><input style="width:35px;" type="text" maxlength="4" style="height:50px;" name="nuevoPrecio"></td>
-								<td><input type="submit" name="agregar" value="Agregar"></td>
+								<td><textarea class="form-control" type="text"  maxlength="80" name="nuevoTitulo"></textarea></td>
+								<td><textarea class="form-control" type="text"  maxlength="500" name="nuevoDescripcion"></textarea></td>
+								<td><input class="form-control"  type="text" maxlength="4" style="height:50px;" name="nuevoPrecio"></td>
+								<td><button type="submit" name="agregar" class="btn btn-success btn-lg">
+	    <span class="glyphicon glyphicon-plus"></span>  Agregar Promoción  </button></td>
 								<td></td>
 							</form>
 						</tr>

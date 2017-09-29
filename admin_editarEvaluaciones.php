@@ -21,10 +21,8 @@
 ?>
 <?php include("basics/functions.php") ?>	
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<head>
+
 	<?php include("basics/header.php") ?>
 	<script>
 	function validar()
@@ -187,21 +185,10 @@
 		}
 	}
 	</script>
-</head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
-					<?php include("basics/menu_admin.php") ?>				
-				</div>	
-			</div>	
-		</div>	
-		<div id="site_content">	
-			<div>
+	<?php include("basics/menu_admin.php") ?>				
+				
 	<!--///////////////////////////////////////////////////////////////// PARTE PARA MOSTRAR EXAMENES, DONDE LUEGO DE PONER EDITAR SE MOSTRARAN SUS PREGUTNAS CORRESPONDIENTES//////////////////////////////////////////-->
 				<br>
 				<h2>Editar Exámenes</h2>
@@ -209,17 +196,18 @@
 				if(!isset($_REQUEST['editarExamen']) && !isset($_REQUEST['agregarPregunta']) && !isset($_REQUEST['editarPregunta'])) 
 				{ ?>
 				<center>
-					<table class="tblEvaluaciones" id="tblModificarEvaluaciones">
+					<div class="table-responsive">
+					<table class="table table-striped" id="tblModificarEvaluaciones">
 						<tr>
-							<td>Id Examen</td>
-							<td>Nombre</td>
-							<td>Descripcion</td>
-							<td>Materia</td>
-							<td>Tiempo</td>
-							<td>Activo</td>
-							<td></td>
-							<td></td>
-							<td></td>
+							<th>Id Examen</th>
+							<th>Nombre</th>
+							<th>Descripcion</th>
+							<th>Materia</th>
+							<th>Tiempo</th>
+							<th>Activo</th>
+							<th>Desactivar</th>
+							<th>Editar</th>
+							<th>Eliminar</th>
 						</tr>
 						<?php
 							$examenes=l_examenes();
@@ -232,13 +220,17 @@
 										  "<td>" . $examen['materia'] . "</td>" .
 										  "<td>" . $examen['tiempo'] . "</td>" .
 										  "<td>"; if($examen['activo'] == 1) { echo 'Si';} else { echo 'No'; } echo "</td>" .
-										  "<td>"; if($examen['activo'] == 1) { echo "<a href='?desactivarExamen=" . $examen['id'] . "'>Desactivar</a>"; } else { echo "<a href='?activarExamen=" . $examen['id'] . "'>Activar</a>"; } echo "</td>" .
-										  "<td><a href='?editarExamen=" . $examen['id'] . "'>Editar</a></td>" .
-										  "<td><a href='?eliminarExamen=" . $examen['id'] . "'>Eliminar</a></td>";
+										  "<td>"; if($examen['activo'] == 1) { echo "<a href='?desactivarExamen=" . $examen['id'] . "'> <button type='button' class='btn btn-danger'>
+	    <span class='glyphicon glyphicon-remove'></span>    </button> </a>"; } else { echo "<a href='?activarExamen=" . $examen['id'] . "'>Activar</a>"; } echo "</td>" .
+										  "<td><a href='?editarExamen=" . $examen['id'] . "'> <button type='button' class='btn btn-warning'>
+	    <span class='glyphicon glyphicon-edit'></span>    </button> </a></td>" .
+										  "<td><a href='?eliminarExamen=" . $examen['id'] . "'> <button type='button' class='btn btn-danger'>
+	    <span class='glyphicon glyphicon-trash'></span>    </button> </a></td>";
 								echo "</tr>";
 							}
 						?>
 					</table>
+				</div>
 					</br>
 				</center>
 				<?php
@@ -247,14 +239,15 @@
 				{
 				?>
 	<!-- //////////////////////////////////////////////PARTE PARA MOSTRAR LAS PREGUNTAS DE LA BASE DE DATOS CORRESPONDIENTE A CADA EXAMEN//////////////////////////////////////////////////////-->
-					<table class="tblEvaluaciones" id="tblModificarEvaluaciones">
+	<div class="table-responsive">
+					<table class="table table-striped" id="tblModificarEvaluaciones">
 						<tr>
 							<td>Id Pregunta</td>
 							<td>Pregunta</td>
 							<td>Respuesta Correcta</td>
 							<td>Tipo Pregunta</td>
-							<td></td>
-							<td></td>
+							<td>Editar</td>
+							<td>Eliminar</td>
 						</tr>
 						<?php
 						if(isset($_REQUEST['editarExamen']))
@@ -319,6 +312,7 @@
 						}
 						?>
 					</table>
+				</div>
 					</br>
 				<?php
 					echo "<center><a href='?agregarPregunta=" . $_SESSION['id_Examen'] . "'>Agregar Pregunta</a></center>";

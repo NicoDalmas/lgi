@@ -27,7 +27,7 @@
 				echo '<li><a href="admin_promos.php"> Promociones </a></li>';
 				echo '<li><a href="admin_usuarios.php"> Usuarios </a></li>';	
 			}
-			?>	
+		?>	
 			</ul>
 			<ul class="nav navbar-nav navbar-right">				
 		<li><a href="usuarios_cambiarPassword.php"> Cambiar Contraseña </a></li>

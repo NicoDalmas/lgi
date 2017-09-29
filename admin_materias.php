@@ -104,8 +104,10 @@
 								echo      "<td>" . $materia['idMateria'] . "</td>" .
 										  "<td>" . $materia['materia'] . "</td>" .
 										  "<td>" . $materia['descripcion'] . "</td>" .
-										  "<td><a href='?editarMateria=" . $materia['idMateria'] . "'> <span class=\"glyphicon glyphicon-edit\" aria-hidden=\"true\"></span></a></td>" . 
-										  "<td><a href='?eliminarMateria=" . $materia['idMateria'] . "'> <span class=\"glyphicon glyphicon-trash\" aria-hidden=\"true\"></span></a></td>";
+										  "<td><a href='?editarMateria=" . $materia['idMateria'] . "'> <button type='button' class='btn btn-warning'>
+	    <span class='glyphicon glyphicon-edit'></span>    </button> </a></td>" . 
+										  "<td><a href='?eliminarMateria=" . $materia['idMateria'] . "'><button type='button' class='btn btn-danger'>
+	    <span class='glyphicon glyphicon-trash'></span></button> </a></td>";
 								echo "</tr>";
 							}
 							if (isset($_REQUEST['eliminarMateria'])) 
@@ -114,13 +116,15 @@
 							}
 						?>
 						<tr>
+							<div class="form-group">
 							<form name="frmMateria" method="post" onsubmit="return validar()" action="admin_materias.php">
 								<td><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></td>
-								<td><input type="text" name="materia" class="form-control"></td>
-								<td><input type="textarea" name="descripcion" class="form-control"></td>
+								<td><input class="form-group" type="text" name="materia" class="form-control"></td>
+								<td><input class="form-group" type="textarea" name="descripcion" class="form-control"></td>
 								<td><input type="submit" class="btn btn-success" name="agregar" value="Agregar Nueva Materia"></td>
 								<td></td>
 							</form>
+						</div>
 						</tr>
 					</table>
 				</div>

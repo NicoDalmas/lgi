@@ -20,10 +20,7 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<head>
 	<?php include("basics/header.php") ?>
 	<script>
 	//Validar formulario
@@ -45,45 +42,41 @@
 		}
 	}
 	</script>
-</head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
+	
 					<?php include("basics/logo.php") ?>
 					<?php include("basics/sesion.php") ?>					
 					<?php include("basics/menu_admin.php") ?>		
 					<?php include("basics/functions.php") ?>	
-				</div>	
-			</div>	
-		</div>	
-		<div id="site_content">
-			<div id="content">
-				<div class="content_item">
+				
+
+				<div class="form-group">
 					<form name="frmSolicitud" method="post" onsubmit="return validar()" action="clientes_adquirir.php">	
-						<div class="form_settings">
-							<h1>Solicitar Producto</h1>
-							<table class="tblregistro">
+						<h1>Solicitar Producto</h1>
+							<table class="table table-hover">
 								<tr>
 									<td>
-										<p><span>Tipo de Examen</span><br/>
-										<select name="tipo">
-											<option selected="selected" value="Online">Online</option>
-											<option value="Offline">Offline</option>
-										</select>
+										
+										<div class="form-group">
+  <label for="sel1">Tipo de Examen: </label>
+  <select class="form-control" id="sel1">
+    <option>Online</option>
+    <option>Offline</option>
+  </select>
+</div>
 									</td>
 									<td rowspan="4">
-										<p><span>Comentarios sobre el contenido</span><br/>
-										<textarea type="text" maxlength="500" style="height:220px; width:400px; resize:none; font-family:Verdana; font-size:12px;" maxlength="500" name="comentarios"></textarea>
+										<p><span><b>Comentarios sobre el contenido</b>></span><br/>
+										<textarea class="form-group" type="text" maxlength="500" style="height:220px; width:400px; resize:none; font-family:Verdana; font-size:12px;" maxlength="500" name="comentarios"></textarea>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><span>Tema</span><br/>
-										<select name="tema">
-											<?php
+										<div class="form-group">
+										  <label for="sel1">Tema: </label>
+										  <select class="form-control" id="sel1">
+										   <?php
 												$temas=l_temas();
 												while($tema = mysql_fetch_array($temas))
 												{	
@@ -93,23 +86,24 @@
 												}
 											?>
 										</select>
+										</div>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><span>Tiempo límite (en minutos)</span><br/>
-										<input type="text" name="tiempo" maxlength="3"/></p>
+										<p><b><span>Tiempo límite (en minutos)</span></b><br/>
+										<input class="form-group" type="text" name="tiempo" maxlength="3"/></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><span>Cantidad de Encuestados</span><br/>
-										<input type="text" name="cantidad" maxlength="5"/></p>
+										<p><b><span>Cantidad de Encuestados</span></b><br/>
+										<input class="form-group" type="text" name="cantidad" maxlength="5"/></p>
 									</td>
 								</tr>
 							</table>
 							<center>
-								<input class="submit" type="submit" name="contact_submitted" value="Solicitar" />
+								<input class="btn btn-primary" type="submit" name="contact_submitted" value="Solicitar" />
 							</center>
 							<?php
 								if(isset($_POST["tipo"]) && isset($_POST["comentarios"]) && isset($_POST["tema"]) && isset($_POST["tiempo"]) && isset($_POST["cantidad"]))

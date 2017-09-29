@@ -604,26 +604,29 @@
 			$nombre_usuario="Admins";
 		}
 		echo "<br><h2>".$nombre_usuario."</h2>";
-		echo "<br><table  class='tblExamenesAlumno' id='tblExamenesAlumno'>";
+		echo "<br><div class='table-responsive'><table  class='table table-striped' id='tblExamenesAlumno'>";
 		echo "<tr>
-				<td>Username</td>
-				<td>Password</td>
-				<td>Email</td>
-				<td>Id de acceso</td>
-				<td>Nombre</td>
-				<td>Apellido</td>
-				<td>DNI</td>
-				<td>Razon</td>
-				<td>Sexo</td>
-				<td>Editar</td>
+				<th>Username</th>
+				<th>Password</th>
+				<th>Email</th>
+				<th>Id de acceso</th>
+				<th>Nombre</th>
+				<th>Apellido</th>
+				<th>DNI</th>
+				<th>Razon</th>
+				<th>Sexo</th>
+				<th>Editar</th>
 			</tr>";
 		while($usuario = mysql_fetch_array($usuarios))
 		{	
 			echo"<tr>";
-			echo"<td>".$usuario['username']."</td><td>".$usuario['password']."</td><td>".$usuario['email']."</td><td>".$usuario['idAcceso']."</td><td>".$usuario['nombre']."</td><td>".$usuario['apellido']."</td><td>".$usuario['dni']."</td><td>".$usuario['razon']."</td><td>".$usuario['sexo']."</td><td><li><a href='admin_usuarios_editar.php?id=".$usuario['id']."'> Editar</a></li></td></tr>";
+			echo"<td>".$usuario['username']."</td><td>".$usuario['password']."</td><td>".$usuario['email']."</td><td>".$usuario['idAcceso']."</td><td>".$usuario['nombre']."</td><td>".$usuario['apellido']."</td><td>".$usuario['dni']."</td><td>".$usuario['razon']."</td><td>".$usuario['sexo']."</td><td><a href='admin_usuarios_editar.php?id=".$usuario['id']."'> <button type='button' class='btn btn-warning'>
+	    <span class='glyphicon glyphicon-edit'></span>  Editar  </button></a></td></tr>";
 		}
-		echo "</table>";
-		echo "<br>";
+			echo "</table>";
+			echo "</div>";
+			echo "<br>";
+			echo "<hr>";
 	}	
 //////// modificar usuarios
 	function m_usuarios($username,$password,$email,$nombre,$apellido,$dni,$razon,$sexo,$id){
