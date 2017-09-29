@@ -20,38 +20,23 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
-<head>
 	<?php include("basics/header.php") ?>
-</head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
 					<?php include("basics/menu_admin.php") ?>		
 					<?php include("basics/functions.php") ?>	
-				</div>	
-			</div>	
-		</div>	
-		<div id="site_content">	
-			<div>
-				</br>
+
 				<h2>Pedidos Pendientes</h2>
 				<center>
-					<table class="tblPromos" id="tblPromos" style="visibility:visible;">
+					<div class="table-responsive">
+						<table class="table table-bordered" id="tblPromos" style="visibility:visible;">
 						<tr>
-							<td>Id Pedido</td>
-							<td>Materia</td>
-							<td>Tipo</td>
-							<td>Tiempo</td>
-							<td>Comentarios</td>
-							<td>Cantidad de Encuestados</td>
+							<th>Id Pedido</th>
+							<th>Materia</th>
+							<th>Tipo</th>
+							<th>Tiempo</th>
+							<th>Comentarios</th>
+							<th>Cantidad de Encuestados</th>
 						</tr>
 						<?php
 							$pedidos=l_solicitudesPendientes();
