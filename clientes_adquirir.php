@@ -43,38 +43,36 @@
 	}
 	</script>
 
+
 <body>
 	
-				<?php include("basics/menu_admin.php") ?>		
-				<?php include("basics/functions.php") ?>	
+										
+					<?php include("basics/menu_admin.php") ?>		
+					<?php include("basics/functions.php") ?>	
 				
 
-				<div class="form-group">
 					<form name="frmSolicitud" method="post" onsubmit="return validar()" action="clientes_adquirir.php">	
-						<h1>Solicitar Producto</h1>
+						<div class="form_settings">
+							<h1>Solicitar Producto</h1>
 							<table class="table table-hover">
 								<tr>
 									<td>
-										
-										<div class="form-group">
-									  <label >Tipo de Examen: </label>
-									  <select name="tipo" class="form-control" >
+										<label >Tipo de Examen: </label>
+										<select name="tipo" class="form-control" >
 									    <option>Online</option>
 									    <option>Offline</option>
 									  </select>
-									</div>
 									</td>
 									<td rowspan="4">
 										<p><span><b>Comentarios sobre el contenido</b></span><br/>
-										<textarea class="form-group" type="text" maxlength="500" style="height:220px; width:400px; resize:none; font-family:Verdana; font-size:12px;" maxlength="500" name="comentarios"></textarea>
+										<textarea type="text" class="form-group" maxlength="500" style="height:220px; width:400px; resize:none; font-family:Verdana; font-size:12px;" maxlength="500" name="comentarios"></textarea>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<div class="form-group">
-										  <label for="sel1">Tema: </label>
-										  <select class="form-control" id="sel1">
-										   <?php
+										<p><span>Tema</span><br/>
+										<select name="tema" class="form-control">
+											<?php
 												$temas=l_temas();
 												while($tema = mysql_fetch_array($temas))
 												{	
@@ -84,25 +82,25 @@
 												}
 											?>
 										</select>
-										</div>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><b><span>Tiempo límite (en minutos)</span></b><br/>
-										<input class="form-group" type="text" name="tiempo" maxlength="3"/></p>
+										<p><span>Tiempo límite (en minutos)</span><br/>
+										<input type="text" class="form-group" name="tiempo" maxlength="3"/></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><b><span>Cantidad de Encuestados</span></b><br/>
-										<input class="form-group" type="text" name="cantidad" maxlength="5"/></p>
+										<p><span>Cantidad de Encuestados</span><br/>
+										<input type="text" class="form-group" name="cantidad" maxlength="5"/></p>
 									</td>
 								</tr>
 							</table>
 							<center>
-								<input class="submit" type="submit" name="contact_submitted" value="Solicitar" />
+								<input type="submit" class="btn btn-success" name="contact_submitted" value="Solicitar" />
 							</center>
+							<br>
 							<?php
 								if(isset($_POST["tipo"]) && isset($_POST["comentarios"]) && isset($_POST["tema"]) && isset($_POST["tiempo"]) && isset($_POST["cantidad"]))
 								{
@@ -119,5 +117,4 @@
 				</div>
 			</div>
 		</div>
-	</p></td></tr></table>
 <?php include("basics/footer.php"); ?>
