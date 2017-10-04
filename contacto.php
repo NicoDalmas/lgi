@@ -78,7 +78,7 @@
 
 <div class="nb-service-back">
 <div class="back-content">
-    <h3>Formulario</h3>
+    <h3><b>Formulario</b></h3>
     <p>Podes completar el formulario a continuación para escribirnos directamente!</p>
 </div>
 </div>
@@ -98,7 +98,7 @@
 			<form name="frmContacto" onsubmit="return arroba()" action="mailto:ndalmas9@gmail.com" method="post" enctype="text/plain">	
 			<div class="form_settings">
 			
-				<h2>Formulario</h2>
+				<h2><b>Formulario</b></h2>
 							<p>Mediante este formulario podés comunicarte con nosotros. Se te responderá a la brevedad.</p>
 							<div class="table-responsive">
 							<table class="table table-striped">

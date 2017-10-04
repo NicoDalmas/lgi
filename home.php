@@ -32,24 +32,33 @@
 		<div class="container-fluid text-center">    
 			<div class="row content">
 				<div class="col-sm-2 sidenav">
-				 
-				</div>
+           <p><a href="/lgi/contacto.php"><button type='button' class='btn btn-info'>Dejanos tu consulta<br><span class='glyphicon glyphicon-question-sign'></span></button></a></p>
+			 </div>
 				<div class="col-sm-8 text-left">
 				<!--?php include("basics/slider.php") ?-->
-					<h1>Bienvenidos al Sitio</h1>
-					<p>Examin.ar es una empresa argentina dedicada a la venta de servicios de evaluaciones en línea o fuera de línea. Desde nuestras oficinas ubicadas en la ciudad de Rosario, Santa Fe, somos una de las empresas líderes de la región. Contamos con una amplia experiencia de desarrollo web que nos permite exponer nuestros exámenes de todo tipo de rubros de manera limpia y exacta, ajustadas a los requerimientos que el interesado desee. </p>
-					<p>Ofrecemos asistencia personalizada a la necesidad de nuestros clientes. Entregamos calidad en cada uno de nuestros servicios. Brindamos asesoría sobre los objetivos particulares de nuestros usuarios y, los acompañamos a alcanzar el producto ideal para su organización.</p>
+					<center><h1><b>Innovamos en Educación</b></h1></center>
+					<p>Nuestra empresa esta dedicada a la venta de servicios de evaluaciones en línea o fuera de línea. Desde nuestras oficinas ubicadas en la ciudad de Rosario, Santa Fe, Argentina, somos una de las empresas líderes de la región. Contamos con una amplia experiencia de desarrollo web que nos permite exponer nuestros exámenes de todo tipo de rubros de manera transparente y precisa, ajustadas a los requerimientos que el interesado desee. </p>
+					<p>Ofrecemos asistencia personalizada a la necesidad de los solicitantes. Entregamos calidad en cada uno de nuestros servicios. Brindamos asesoría sobre los objetivos particulares de nuestros usuarios y, los acompañamos a alcanzar el producto ideal para su organización.</p>
 					<p>Valoramos la confianza que depositan en nosotros. Es por eso que nuestras políticas nos permiten generar una relación totalmente confidencial con nuestros usuarios y su información. Proveemos a nuestro sitio de la más alta seguridad para proteger los datos contra cualquier amenaza.</p>
-					<p>Nuestra visión es ampliar nuestras fronteras ofreciendo nuestros servicios a una mayor cantidad de clientes, tanto dentro como fuera del país. Queremos ser la empresa más elegida por calidad, servicio y asesoría de toda la república. A tal punto, deseamos incorporar nuevos e innovadores productos en el mercado para alcanzar nuestro objetivo.</p>
+					<p>Nuestra visión es ampliar nuestros servicios a una mayor cantidad de clientes, tanto dentro como fuera del país. Queremos ser la empresa más elegida por calidad, servicio y asesoría de todas. A tal punto, deseamos incorporar nuevos e innovadores productos en el mercado para alcanzar nuestro objetivo.</p>
 					<p>¡Te esperamos en tu próximo proyecto!</p>
+           <center><img src="images/comrpomiso.jpg" class="img-responsive"/></center>
 				</div>
+
 				<div class="col-sm-2 sidenav">
+          <div class="well">
+          <img src="images/exam.jpg" class="img-responsive"/>
+        </div>
 				  <div class="well">
-					<p>ADS</p>
+					<p>Inscribite a nuestra convención de fin de año!</p>
 				  </div>
 				  <div class="well">
-					<p>ADS</p>
-				  </div>
+					<p>Consultá por nuestra Agenda de Eventos</p>
+          </div>
+           <div class="well">
+          <img src="images/edutec.png" class="img-responsive"/>
+        </div>
+        
 				</div>
 			</div>
 		</div>

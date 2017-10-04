@@ -3,19 +3,16 @@
 
 <body>
 				<?php include("basics/menu.php") ?>	
-				<?php include("basics/logo.php") ?>	
 				<?php include("basics/functions.php") ?>				
 			
 
 			<div class="container-fluid text-center">    
 			  <div class="row content">
 			    <div class="col-sm-2 sidenav">
-			      <p><a href="#">Link</a></p>
-			      <p><a href="#">Link</a></p>
-			      <p><a href="#">Link</a></p>
+			      <p><a href="/lgi/contacto.php"><button type='button' class='btn btn-info'>Dejanos tu consulta<br><span class='glyphicon glyphicon-question-sign'></span></button></a></p>
 			    </div>
 			    <div class="col-sm-8 text-left"> 
-			      <h1>Productos</h1>
+			      <center><b><h1>Productos</b></h1></center>
 			      <hr>
 			         <h3>Exámenes Offline</h3>
 			      <p>Es un servicio en el cual los alumnos acceden a nuestro sitio mediante
@@ -36,7 +33,7 @@
 							   libre". Estos exámenes permiten al cliente examinar con libertad las 
 							   respuestas libres de sus alumnos. Usted mismo elige el tópico del examen.</p>
 					<hr>
-						<h2>Características</h2>
+						<center><h2>Características</h2></center>
 						<hr>	
 						<h3>Cantidad de Examinados</h3>
 							<p>La elección de la cantidad de personas que desea evaluar, ¡puede controlarlo
@@ -46,14 +43,21 @@
 							<p>Contamos con expertos y asesores de gran cantidad de asignaturas. Solo deberá
 							   elegir el tópico, y nosotros nos encargamos del resto.</p>   
 			    </div>
-			    <div class="col-sm-2 sidenav">
-			      <div class="well">
-			        <p>ADS</p>
-			      </div>
-			      <div class="well">
-			        <p>ADS</p>
-			      </div>
-			    </div>
+			<div class="col-sm-2 sidenav">
+          <div class="well">
+          <img src="images/exam.jpg" class="img-responsive"/>
+        </div>
+				  <div class="well">
+					<p>Inscribite a nuestra convención de fin de año!</p>
+				  </div>
+				  <div class="well">
+					<p>Consultá por nuestra Agenda de Eventos</p>
+          </div>
+           <div class="well">
+          <img src="images/edutec.png" class="img-responsive"/>
+        </div>
+        
+				</div>
 			  </div>
 			</div>
 

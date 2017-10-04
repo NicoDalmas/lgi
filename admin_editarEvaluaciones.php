@@ -191,7 +191,7 @@
 				
 	<!--///////////////////////////////////////////////////////////////// PARTE PARA MOSTRAR EXAMENES, DONDE LUEGO DE PONER EDITAR SE MOSTRARAN SUS PREGUTNAS CORRESPONDIENTES//////////////////////////////////////////-->
 				<br>
-				<h2>Editar Exámenes</h2>
+				<center><h2><b>Editar Exámenes</b></h2></center>
 				<?php
 				if(!isset($_REQUEST['editarExamen']) && !isset($_REQUEST['agregarPregunta']) && !isset($_REQUEST['editarPregunta'])) 
 				{ ?>

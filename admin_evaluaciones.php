@@ -43,7 +43,7 @@
 					<?php include("basics/menu_admin.php") ?>
 					<?php include("basics/functions.php") ?>					
 				
-				<h2>Crear Exámenes</h2>
+				<center> <h2><b>Crear Exámenes</b></h2></center>
 				<?php
 				if(!isset($_REQUEST['crearExamen'])) 
 				{ ?>

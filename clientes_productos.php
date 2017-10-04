@@ -55,7 +55,7 @@
 			{ 
 			?>
 				<br>
-				<h2>Productos disponibles  </h2>
+				<b><h2><center>Productos disponibles</b></h2></center>
 				<table class='tblExamenesAlumno' id='tblExamenesAlumno'>
 					<tr><td>Nombre Examen</td><td>Descripcion</td><td>Tiempo</td><td>Online</td><td>Offline</td></tr>
 						<?php

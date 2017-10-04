@@ -53,7 +53,7 @@
 
 					<form name="frmSolicitud" method="post" onsubmit="return validar()" action="clientes_adquirir.php">	
 						<div class="form_settings">
-							<h1>Solicitar Producto</h1>
+							<h1><b>Solicitar Producto</b></h1>
 							<table class="table table-hover">
 								<tr>
 									<td>
@@ -70,7 +70,7 @@
 								</tr>
 								<tr>
 									<td>
-										<p><span>Tema</span><br/>
+										<p><span><b>Tema</b></span><br/>
 										<select name="tema" class="form-control">
 											<?php
 												$temas=l_temas();
@@ -86,13 +86,13 @@
 								</tr>
 								<tr>
 									<td>
-										<p><span>Tiempo límite (en minutos)</span><br/>
+										<p><span><b>Tiempo límite (en minutos)</b></span><br/>
 										<input type="text" class="form-group" name="tiempo" maxlength="3"/></p>
 									</td>
 								</tr>
 								<tr>
 									<td>
-										<p><span>Cantidad de Encuestados</span><br/>
+										<p><span><b>Cantidad de Encuestados</b></span><br/>
 										<input type="text" class="form-group" name="cantidad" maxlength="5"/></p>
 									</td>
 								</tr>

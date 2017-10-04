@@ -44,7 +44,8 @@
 			</div>	
 		</div>	
 		
-		<div id="site_content">		
+		<div id="site_content">	
+		<b><h2><center>Listado de Alumnos</b></h2></center>	
 				<table class='tblExamenesAlumno' id='tblExamenesAlumno'>		
 				<br>
 				<tr><td>Apellido y Nombre</td><td>DNI</td><td>Email</td><td>Ver examenes</td>

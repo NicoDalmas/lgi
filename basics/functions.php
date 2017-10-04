@@ -592,16 +592,16 @@
 	function separar($usuarios, $idacceso){
 		
 		if ($idacceso==1){
-			$nombre_usuario="Alumnos";
+			$nombre_usuario="<b>Alumnos</b>";
 		}
 		elseif ($idacceso==2){
-			$nombre_usuario="Clientes";
+			$nombre_usuario="<b>Clientes</b>";
 		}
 		elseif ($idacceso==3){
-			$nombre_usuario="Administradores";
+			$nombre_usuario="<b>Administradores</b>";
 		}
 		else {
-			$nombre_usuario="Admins";
+			$nombre_usuario="<b>Admins</b>";
 		}
 		echo "<br><h2>".$nombre_usuario."</h2>";
 		echo "<br><div class='table-responsive'><table  class='table table-striped' id='tblExamenesAlumno'>";

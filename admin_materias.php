@@ -68,7 +68,7 @@
 		<div id="site_content">	
 			<div>
 				</br>
-				<h2>Materias</h2>
+				<h2><b><center>Materias</center></b></h2>
 				<?php
 					if(isset($_REQUEST['editarMateria'])) 
 					{

@@ -90,7 +90,7 @@
 		<div id="site_content">	
 			<div>
 				</br>
-				<h2>Promociones Vigentes</h2>
+				<b><h2><center>Promociones Vigentes</b></h2></center>
 				<?php
 					if(isset($_REQUEST['editarPromo'])) 
 					{

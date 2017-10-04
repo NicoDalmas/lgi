@@ -26,7 +26,7 @@
 					<?php include("basics/menu_admin.php") ?>		
 					<?php include("basics/functions.php") ?>	
 
-				<h2>Pedidos Pendientes</h2>
+				<center><h2><b>Pedidos Pendientes</b></h2></center>
 				<center>
 					<div class="table-responsive">
 						<table class="table table-bordered" id="tblPromos" style="visibility:visible;">

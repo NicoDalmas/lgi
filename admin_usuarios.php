@@ -27,9 +27,7 @@
 </head>
 
 <body>
-	
-	<?php include("basics/logo.php"); ?>
-	<?php include("basics/sesion.php"); ?>					
+				
 	<?php include("basics/functions.php"); ?>	
 	<?php include("basics/menu_admin.php"); ?>		
 			
