@@ -1,4 +1,3 @@
-
 <?php include("basics/header.php") ?>
 <?php include("basics/session.php") ?>
 <body>

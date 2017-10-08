@@ -18,17 +18,8 @@
 </head>
 
 <body>
-	<div id="main">
-		<div id="header">
-				<div id="banner">
-        <?php include("basics/menu.php") ?>	
-				<?php include("basics/sesion.php") ?>
-				</div>	
-			</div>	
-		</div>	
-		
-		<!--div id="site_content"-->	
-					
+	<?php include("basics/menu.php") ?>	
+	<?php include("basics/sesion.php") ?>
 		<div class="container-fluid text-center">    
 			<div class="row content">
 				<div class="col-sm-2 sidenav">
