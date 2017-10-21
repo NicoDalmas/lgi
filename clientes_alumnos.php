@@ -24,29 +24,14 @@
 		exit();
 	}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<head>
 	<?php include("basics/header.php") ?>	
-</head>
-
-<body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
+				
 					<?php include("basics/menu_admin.php") ?>		
 					<?php include("basics/functions.php") ?>	
-				</div>	
-			</div>	
-		</div>	
-		
-		<div id="site_content">	
+				
 		<b><h2><center>Listado de Alumnos</b></h2></center>	
-				<table class='tblExamenesAlumno' id='tblExamenesAlumno'>		
+				<table class='table table-bordered' id='tblExamenesAlumno'>		
 				<br>
 				<tr><td>Apellido y Nombre</td><td>DNI</td><td>Email</td><td>Ver examenes</td>
 				</tr>

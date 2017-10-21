@@ -23,31 +23,21 @@
 
 
 
-<head>
 	<?php include("basics/header.php") ?>
-</head>
+
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-									
+	
 					<?php include("basics/menu_admin.php") ?>		
 					<?php include("basics/functions.php") ?>	
-				</div>	
-			</div>	
-		</div>	
-		
-		<div id="site_content">
-			</br>
+			
 			<h2>Examenes:</h2>
 			<?php
 			if(!isset($_REQUEST['evaluacion']))
 			{
 			?>
 			<form name="frmCodigoExamen" method="post">	
-				<table class="tblAgregarExamenAlumno" id="tblExamenesAlumno">
+				<table class="table table-bordered" id="tblExamenesAlumno">
 					<tr>
 						<td><p><b>Ingrese su código y contraseña <u>de examen</u> para añadirlo a la lista:</b></p></td>
 						<td><p>Código: <input type="text" name="codEvaluacion"></p></td>
@@ -58,7 +48,7 @@
 			</form>
 			<?php $mensaje = ''; echo $mensaje; ?>
 			</br>
-			<table class="tblExamenesAlumno" id="tblExamenesAlumno">				
+			<table class="table table-bordered" id="tblExamenesAlumno">				
 				<tr>
 					<td>Examen</td>
 					<td>Estado</td>

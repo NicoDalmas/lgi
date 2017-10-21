@@ -29,28 +29,17 @@
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
-<head>
 	<?php include("basics/header.php") ?>	
-</head>
 
 <body>
-	<div id="main">
-		<div id="header">
-			<div id="header">
-				<div id="banner">
-					<?php include("basics/logo.php") ?>
-					<?php include("basics/sesion.php") ?>					
+					
 					<?php include("basics/menu_admin.php") ?>		
 					<?php include("basics/functions.php") ?>	
-				</div>	
-			</div>	
-		</div>	
-		<div id="site_content">	
-			
-			<table class='tblExamenesAlumno' id='tblExamenesAlumno'>				
+								
+
+					<div class="table-responsive">
+					<table class='table table-bordered' id='tblExamenesAlumno'>				
 				<tr><td>Examen</td><td>Estado</td><td>Nota</td><td>Inicio</td><td>Terminada</td><td>Ver evaluacion</td></tr>
 				<?php
 				$nom=l_usuarios_id($_SESSION['id_alumno']);
